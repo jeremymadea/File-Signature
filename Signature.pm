@@ -1,9 +1,8 @@
-# $Id$
 package File::Signature;
 use strict;
 
 use vars qw( $VERSION );
-$VERSION = sprintf "%d.%03d", q$Revision: 1.9 $ =~ /(\d+)\.(\d+)/;
+$VERSION = '1.10';
 
 use Digest::MD5;
 
@@ -456,7 +455,10 @@ None.
 
 =head1 CHANGES
 
- $Log: Signature.pm,v $
+ 1.10  Sat May  5 06:36:42 EDT 2012
+ Removed old RCS Id and Log cruft. Fixed and added tests. 
+ Contact info updated.
+
  Revision 1.9  2003/08/12 19:53:03  jeremy
  Fixups to tests.
 
@@ -498,7 +500,7 @@ Jeremy Madea, E<lt>jeremy@cpan.orgE<gt>
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright (C) 2003 by Jeremy Madea. All rights reserved.
+Copyright (C) 2003-2012 by Jeremy Madea. All rights reserved.
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself. 

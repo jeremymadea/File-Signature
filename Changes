@@ -1,3 +1,10 @@
+2012-05-05  Jeremy Madea <jeremy@cpan.org>
+ 
+	* Removed old versioning cruft. 
+	* Updated contact info. 
+	* Added test for unsupported platforms.
+	* Fixed a test warning. 
+
 2003-08-12  Jeremy Madea  <jeremy@neon>
 
 	* Signature.pm: Fixups to tests.
