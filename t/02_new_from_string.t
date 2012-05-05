@@ -9,6 +9,15 @@ use Test::More tests => 6;
 use File::Signature;
 
 #########################
+sub touch_testfile {
+    my $file = shift || './testfile';
+    open F, '>>', $file or die "Couldn't open $file: $!"; #return undef;
+    print F "\n";
+    close F;
+    return 1;
+}
+
+sub remove_testfile { unlink './testfile' if -e './testfile' }
 
 my $METHOD = qr/File::Signature::new_from_string\(\)/;
 
@@ -30,10 +39,11 @@ like( $@, qr/^$METHOD: bad errobj string/, "exception: bad errobj string");
 
 {
     do 't/util.pl';
-    touch_testfile;
+    touch_testfile();
     my $o1 = File::Signature->new('./testfile');
     my $o2 = File::Signature->new_from_string("$o1");
     is( $o1->pathname,  $o2->pathname , "success with good object");
+    remove_testfile();
 }
 
 {

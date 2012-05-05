@@ -3,6 +3,7 @@ Makefile.PL
 MANIFEST
 README
 Signature.pm
+t/00_OS-check.t
 t/00_use.t
 t/01_new.t
 t/02_new_from_string.t
