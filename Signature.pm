@@ -1,4 +1,4 @@
-# $Id: Signature.pm,v 1.9 2003/08/12 19:53:03 jeremy Exp $
+# $Id$
 package File::Signature;
 use strict;
 
