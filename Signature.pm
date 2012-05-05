@@ -494,7 +494,7 @@ standards.
 
 =head1 AUTHOR
 
-Jeremy Madea, E<lt>jdm@pobox.comE<gt>
+Jeremy Madea, E<lt>jeremy@cpan.orgE<gt>
 
 =head1 COPYRIGHT AND LICENSE
 
