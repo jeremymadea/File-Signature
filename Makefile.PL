@@ -4,6 +4,7 @@ use ExtUtils::MakeMaker;
 # the contents of the Makefile that is written.
 WriteMakefile(
     'NAME'		=> 'File::Signature',
+    'LICENSE'           => 'perl',
     'VERSION_FROM'	=> 'Signature.pm', # finds $VERSION
     'PREREQ_PM'		=> {Digest::MD5 => 2.12 }, # e.g., Module::Name => 1.1
     ($] >= 5.005 ?    ## Add these new keywords supported since 5.005
